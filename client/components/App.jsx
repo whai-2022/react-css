@@ -11,16 +11,17 @@ function App () {
   }, [])
 
   return (
-    <>
       <div className='app'>
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
+        <h1>I Love Fruit!</h1>
         <ul>
           {fruits.map(fruit => (
-            <li key={fruit}>{fruit}</li>
+            <div key={fruit.id}>
+              <p>{fruit.name}</p>
+              <img src={fruit.url} className='image'/>
+            </div>
           ))}
         </ul>
       </div>
-    </>
   )
 }
 
