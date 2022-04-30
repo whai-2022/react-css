@@ -13,14 +13,14 @@ function App () {
   return (
       <div className='app'>
         <h1>I Love Fruit!</h1>
-        <ul>
+        <div className='fruits'>
           {fruits.map(fruit => (
-            <div key={fruit.id}>
-              <p>{fruit.name}</p>
+            <div key={fruit.id} className='fruit'>
+              <p className='label'>{fruit.name}</p>
               <img src={fruit.url} className='image'/>
             </div>
           ))}
-        </ul>
+        </div>
       </div>
   )
 }
