@@ -11,13 +11,13 @@ function App () {
   }, [])
 
   return (
-      <div className='app'>
+      <div>
         <h1>I Love Fruit!</h1>
         <ul>
           {fruits.map(fruit => (
             <div key={fruit.id}>
               <p>{fruit.name}</p>
-              <img src={fruit.url} className='image'/>
+              <img src={fruit.url} style={{height: '100px', width: '100px' }}/>
             </div>
           ))}
         </ul>
