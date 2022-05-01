@@ -44,7 +44,7 @@ function Fruits () {
        {fruits.map(fruit => (
           <Fruit key={fruit.id}>
             <p>{fruit.name}</p>
-            <img src={fruit.url} />
+            <img src={fruit.url} alt={fruit.name}/>
           </Fruit>
         ))}
     </FruitList>
