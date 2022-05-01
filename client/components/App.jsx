@@ -1,15 +1,6 @@
 import React from 'react'
 import Fruits from './Fruits'
 
-
-// const Container = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   height: 100vh;
-//   width: 100vw;
-// `
-
 const App = () => {
   return (
     <div className='flex flex-col  items-center bg-sky-200 h-screen w-screen'>
@@ -20,3 +11,11 @@ const App = () => {
 }
 
 export default App
+
+// const Container = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   height: 100vh;
+//   width: 100vw;
+// `
