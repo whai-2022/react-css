@@ -21,7 +21,7 @@ function Fruits () {
             className='flex flex-col align-item-center justify-content-center bg-white rounded-lg overflow-hidden'
           >
             <p className='capitalize color text-neutral-800 text-center'>{fruit.name}</p>
-            <img src={fruit.url} className='h-64 w-64' />
+            <img src={fruit.url} className='h-64 w-64' alt={fruit}/>
           </div>
         ))}
     </div>
