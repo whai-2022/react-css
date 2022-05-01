@@ -1,21 +1,17 @@
 import React from 'react'
+import { Flex, Heading  } from '@chakra-ui/react'
+
+
 import Fruits from './Fruits'
 
 const App = () => {
+
   return (
-    <div className='flex flex-col  items-center bg-sky-200 h-screen w-screen'>
-      <h1 className='text-3xl font-bold text-neutral-800 py-6'>I Love Fruit!</h1>
+    <Flex w='100vw' h='100vh' display='flex' flexDirection='column' alignItems='center' justifyContent='center' bg='lightblue'>
+      <Heading as='h1' textAlign='center' color='gray.800' pb='4'>I Love Fruit!</Heading>
       <Fruits />
-    </div>
+    </Flex>
   )
 }
 
 export default App
-
-// const Container = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   height: 100vh;
-//   width: 100vw;
-// `

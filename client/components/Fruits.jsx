@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { Flex, Text, Image  } from '@chakra-ui/react'
 
 import { fetchFruits } from '../actions'
 
@@ -12,48 +13,23 @@ function Fruits () {
   }, [])
 
   return (
-    <div 
-      className='w-3/4 flex justify-around align-center bg-yellow-100 py-6 rounded-lg'
-    >
+    <Flex w='75%' alignItems='center' justifyContent='space-around' p='6' bg='blanchedalmond' borderRadius='lg'>
        {fruits.map(fruit => (
-          <div 
+          <Flex 
             key={fruit.id}
-            className='flex flex-col align-item-center justify-content-center bg-white rounded-lg overflow-hidden'
+            flexDirection='column' 
+            alignItems='center' 
+            justifyContent='center' 
+            bg='gray.100' 
+            borderRadius='lg' 
+            overflow='hidden'
           >
-            <p className='capitalize color text-neutral-800 text-center'>{fruit.name}</p>
-            <img src={fruit.url} className='h-64 w-64' />
-          </div>
+            <Text textTransform='capitalize' color='gray.800'>{fruit.name}</Text>
+            <Image src={fruit.url} boxSize='250px' alt={fruit}/>
+          </Flex>
         ))}
-    </div>
+    </Flex>
   )
 }
 
 export default Fruits
-
-
-// const FruitList = styled.div`
-//     display: flex;
-//     width: 75%;
-//     justify-content: space-around;
-//     align-items: center;
-//     background-color: blanchedalmond;
-//     padding: 2rem 0;
-//     border-radius: .5rem;
-//   `
-
-//   const Fruit = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   background-color:rgb(250, 249, 249);
-//   border-radius: .5rem;
-//   overflow: hidden;
-//     p {
-//       text-transform: capitalize
-//     }
-//     img {
-//       height: 250px;
-//       width: 250px;
-//     }
-//   `
