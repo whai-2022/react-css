@@ -13,7 +13,7 @@ function Fruits () {
   }, [])
 
   return (
-    <Flex w='75%' alignItems='center' justifyContent='space-around' p='6' bg='myColors.secondary' borderRadius='lg'>
+    <Flex w='90%' alignItems='center' justifyContent='space-around' p='6' bg='myColors.secondary' borderRadius='lg'>
        {fruits.map(fruit => (
           <Flex 
             key={fruit.id}
@@ -25,7 +25,7 @@ function Fruits () {
             overflow='hidden'
           >
             <Text textTransform='capitalize' color='gray.800'>{fruit.name}</Text>
-            <Image src={fruit.url} boxSize='250px' alt={fruit}/>
+            <Image src={fruit.url} boxSize='250px' alt={fruit.name}/>
           </Flex>
         ))}
     </Flex>
