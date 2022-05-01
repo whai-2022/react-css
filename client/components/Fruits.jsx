@@ -12,9 +12,12 @@ function Fruits () {
   }, [])
 
   return (
-    <div className='w-3/4 flex justify-around align-center bg-yellow-100 p-4 rounded-lg'>
+    <div 
+      className='w-3/4 flex justify-around align-center bg-yellow-100 p-4 rounded-lg'
+    >
        {fruits.map(fruit => (
-          <div key={fruit.id}
+          <div 
+            key={fruit.id}
             className='flex flex-col align-center justify-center bg-white rounded-lg overflow-hidden'
           >
             <p className='capitalize'>{fruit.name}</p>
