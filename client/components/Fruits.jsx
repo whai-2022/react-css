@@ -4,14 +4,7 @@ import styled from 'styled-components'
 
 import { fetchFruits } from '../actions'
 
-function Fruits () {
-  const fruits = useSelector(state => state.fruits)
-  const dispatch = useDispatch()
-  useEffect(() => {
-    dispatch(fetchFruits())
-  }, [])
-
-  const FruitList = styled.div`
+const FruitList = styled.div`
     display: flex;
     width: 75%;
     justify-content: space-around;
@@ -19,7 +12,7 @@ function Fruits () {
     background-color: blanchedalmond;
     padding: 2rem 0;
     border-radius: .5rem;
-  `;
+  `
 
   const Fruit = styled.div`
   display: flex;
@@ -36,7 +29,15 @@ function Fruits () {
       height: 250px;
       width: 250px;
     }
-  `;
+  `
+
+function Fruits () {
+  const fruits = useSelector(state => state.fruits)
+  const dispatch = useDispatch()
+  
+  useEffect(() => {
+    dispatch(fetchFruits())
+  }, [])
 
   return (
     <FruitList>
