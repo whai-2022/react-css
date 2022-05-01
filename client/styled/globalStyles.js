@@ -12,4 +12,4 @@ const GlobalStyle = createGlobalStyle`
 export default GlobalStyle
 
 // Dark Mode
-// background-color = ${props => (props.darkMode ? 'black' : 'white')}di
+// background-color = ${props => (props.darkMode ? 'black' : 'white')}
