@@ -13,15 +13,15 @@ function Fruits () {
 
   return (
     <div 
-      className='w-3/4 flex justify-around align-center bg-yellow-100 p-4 rounded-lg'
+      className='w-3/4 flex justify-around align-center bg-yellow-100 py-6 rounded-lg'
     >
        {fruits.map(fruit => (
           <div 
             key={fruit.id}
-            className='flex flex-col align-center justify-center bg-white rounded-lg overflow-hidden'
+            className='flex flex-col align-item-center justify-content-center bg-white rounded-lg overflow-hidden'
           >
-            <p className='capitalize'>{fruit.name}</p>
-            <img src={fruit.url} className='h-40 w-40' />
+            <p className='capitalize color text-neutral-800 text-center'>{fruit.name}</p>
+            <img src={fruit.url} className='h-64 w-64' />
           </div>
         ))}
     </div>
