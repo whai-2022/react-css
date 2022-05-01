@@ -21,7 +21,7 @@ function Fruits () {
             className='flex flex-col align-item-center justify-content-center bg-white rounded-lg overflow-hidden'
           >
             <p className='capitalize color text-neutral-800 text-center'>{fruit.name}</p>
-            <img src={fruit.url} className='h-64 w-64' alt={fruit}/>
+            <img src={fruit.url} className='h-48 w-48' alt={fruit}/>
           </div>
         ))}
     </div>
@@ -29,31 +29,3 @@ function Fruits () {
 }
 
 export default Fruits
-
-
-// const FruitList = styled.div`
-//     display: flex;
-//     width: 75%;
-//     justify-content: space-around;
-//     align-items: center;
-//     background-color: blanchedalmond;
-//     padding: 2rem 0;
-//     border-radius: .5rem;
-//   `
-
-//   const Fruit = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   background-color:rgb(250, 249, 249);
-//   border-radius: .5rem;
-//   overflow: hidden;
-//     p {
-//       text-transform: capitalize
-//     }
-//     img {
-//       height: 250px;
-//       width: 250px;
-//     }
-//   `
