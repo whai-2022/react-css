@@ -6,7 +6,7 @@ import { fetchFruits } from '../actions'
 
 const FruitList = styled.div`
     display: flex;
-    width: 75%;
+    width: 90%;
     justify-content: space-around;
     align-items: center;
     background-color: blanchedalmond;
