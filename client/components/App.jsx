@@ -12,8 +12,8 @@ import Fruits from './Fruits'
 
 const App = () => {
   return (
-    <div>
-      <h1 className='text-3xl underline'>I Love Fruit!</h1>
+    <div className='flex flex-col justify-center items-center bg-blue-400 h-screen w-screen'>
+      <h1 className='text-3xl font-bold'>I Love Fruit!</h1>
       <Fruits />
     </div>
   )

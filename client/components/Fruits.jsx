@@ -12,11 +12,13 @@ function Fruits () {
   }, [])
 
   return (
-    <div>
+    <div className='w-3/4 flex justify-around align-center bg-yellow-100 p-4 rounded-lg'>
        {fruits.map(fruit => (
-          <div key={fruit.id}>
-            <p>{fruit.name}</p>
-            <img src={fruit.url} style={{height: '250px', width: '250px'}} />
+          <div key={fruit.id}
+            className='flex flex-col align-center justify-center bg-white rounded-lg overflow-hidden'
+          >
+            <p className='capitalize'>{fruit.name}</p>
+            <img src={fruit.url} className='h-40 w-40' />
           </div>
         ))}
     </div>
