@@ -13,7 +13,7 @@ function Fruits () {
   }, [])
 
   return (
-    <Flex w='75%' alignItems='center' justifyContent='space-around' p='6' bg='blanchedalmond' borderRadius='lg'>
+    <Flex w='75%' alignItems='center' justifyContent='space-around' p='6' bg='myColors.secondary' borderRadius='lg'>
        {fruits.map(fruit => (
           <Flex 
             key={fruit.id}
