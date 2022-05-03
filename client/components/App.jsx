@@ -1,27 +1,22 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React from 'react'
+import styled from 'styled-components'
+import Fruits from './Fruits'
 
-import { fetchFruits } from '../actions'
 
-function App () {
-  const fruits = useSelector(state => state.fruits)
-  const dispatch = useDispatch()
-  useEffect(() => {
-    dispatch(fetchFruits())
-  }, [])
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+`
 
+const App = () => {
   return (
-      <div className='app'>
-        <h1>I Love Fruit!</h1>
-        <div className='fruits'>
-          {fruits.map(fruit => (
-            <div key={fruit.id} className='fruit'>
-              <p className='label'>{fruit.name}</p>
-              <img src={fruit.url} className='image'/>
-            </div>
-          ))}
-        </div>
-      </div>
+    <Container>
+      <h1>I Love Fruit!</h1>
+      <Fruits />
+    </Container>
   )
 }
 
